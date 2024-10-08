@@ -10,9 +10,7 @@ RUN cargo build -r
 FROM rust:1-slim-bookworm
 COPY --from=builder /tmp/freedit/target/release/freedit /usr/local/bin/freedit
 
-RUN mkdir /tmp/freedit
-
-COPY --from=builder /tmp/freedit/static /tmp/freedit/static
+RUN mkdir /data && mkdir /static
 
 COPY ./config.toml /config.toml
 
