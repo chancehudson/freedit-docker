@@ -1,5 +1,4 @@
-FROM rust:1-slim-bookworm as builder
-MAINTAINER chancehudson
+FROM rust:1-slim-bookworm AS builder
 
 RUN apt update && apt install -y git build-essential
 RUN git clone https://github.com/freedit-org/freedit.git /tmp/freedit
