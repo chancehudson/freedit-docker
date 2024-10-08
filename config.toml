@@ -1,5 +1,5 @@
 db = "/data/freedit.db"
-addr = "127.0.0.1:3001"
+addr = "0.0.0.0:3001"
 avatars_path = "/static/imgs/avatars"
 inn_icons_path = "/static/imgs/inn_icons"
 upload_path = "/static/imgs/upload"
